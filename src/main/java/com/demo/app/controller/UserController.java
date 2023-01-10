@@ -43,6 +43,9 @@ public class UserController {
 			BindingResult bindingResult, Model model) {
 		userValidator.validate(userForm, bindingResult);
 
+		String test = null;
+		test.toString();
+		
 		if (bindingResult.hasErrors()) {
 			return "registration";
 		}
